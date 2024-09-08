@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teknik Solutions - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="Teknik Solution_fevicon.png" alt="Teknik Solutions Logo" class="logo">
+                <h1>Teknik Solutions</h1>
+            </div>
+           
+            <nav>
+                <ul>
+                    <li><a href="#about" aria-label="About Us">About Us</a></li>
+                    <li><a href="#services" aria-label="Services">Services</a></li>
+                    <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+                    <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-background"></div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Welcome to Teknik Solutions, where we bring your vision to life. With over 15 years of experience in the construction industry, we specialize in high-quality residential and commercial projects. Our team is dedicated to excellence, from planning to execution.</p>
+                <p>Founded by Iliyas Beg in 2010, Teknik Solutions has built a reputation for delivering exceptional results and outstanding customer service. We take pride in every project we undertake and strive to exceed client expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Residential Construction</h3>
+                    <p>We build dream homes with quality materials and meticulous attention to detail.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Commercial Projects</h3>
+                    <p>From office spaces to retail stores, we deliver functional and attractive commercial properties.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Renovations & Remodels</h3>
+                    <p>Transform your existing space into something new and exciting with our renovation services.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Project Management</h3>
+                    <p>Comprehensive project management to ensure timely and successful project completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="back.jpg" alt="Project 1">
+                        <div class="portfolio-info">
+                            <h3>Project 1</h3>
+                            <p>Khadakwasla Pune</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="mit aurangabad.jpg" alt="Project 2">
+                        <div class="portfolio-info">
+                            <h3>Project 2</h3>
+                            <p>M.I.T Aurangabad Expose Brick work</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="Expose brick work baner.jpg" alt="Project 3">
+                        <div class="portfolio-info">
+                            <h3>Project 3</h3>
+                            <p>Expose Brick Work Baner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                let slideIndex = 0;
+                const slides = document.querySelectorAll('.slide');
+                const totalSlides = slides.length;
+            
+                function showSlides() {
+                    slides.forEach((slide, index) => {
+                        slide.style.display = 'none';  // Hide all slides
+                    });
+                    slideIndex++;
+                    if (slideIndex > totalSlides) {slideIndex = 1}
+                    slides[slideIndex - 1].style.display = 'block';  // Show the current slide
+                    setTimeout(showSlides, 3000);  // Change slide every 3 seconds
+                }
+            
+                showSlides();  // Initial call
+            </script>
+            
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any inquiries or need assistance, feel free to reach out to us via WhatsApp:</p>
+            <a href="https://wa.me/919175971712" class="whatsapp-link" target="_blank" aria-label="Chat with us on WhatsApp">
+                Chat with us on WhatsApp
+            </a>
+            <p>Or you can call us at <a href="tel:+919175971712">+91 91759 71712</a>.</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Teknik Solutions. All rights reserved.</p>
+            <p>1006 Ventelia Park,Ganesh Nagar,Bopkhel,Pune 411031</p>
+            <p>Email: <a href="mailto: takniksolution777@gmail.com"> takniksolution777@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
